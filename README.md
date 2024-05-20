@@ -2,6 +2,7 @@
 
 In this assignment I extended Graph. 
 As requested, I added comparison and arithmetic operators to Graph, each operator has a declaration in Graph.hpp and an implementation in Graph.cpp.  
+`Aritmethic operators`:  
 * `g1+g2`: returns a graph with adjacency_matrix that was obtained by adding g1's adjacency_matrix to g2's adjacency_matrix.
 * `+g1`: unary plus - returns a deep copy of g1.
 * `g1+=g2`: returns a reference to g1 after adding g2's adjacency_matrix to g1's adjacency_matrix.
@@ -15,4 +16,8 @@ As requested, I added comparison and arithmetic operators to Graph, each operato
 * `--g1`: prefix decrement - first the function decreases g1's adjacency_matrix by 1 and than the function returns a reference to g1.
 * `g1++`: postfix increment - the function creates a deep copy of g1, then increases g1's adjacency_matrix by 1 and than the function returns the deep copy.
 * `g1--`: postfix decrement - the function creates a deep copy of g1, then decreases g1's adjacency_matrix by 1 and than the function returns the deep copy.
-* 
+
+  `Comparison operators`:
+  
+* `g1>g2`: checks if g1's adjacency_matrix contains g2's adjacency_matrix. If not, checks if g1 has more edges than g2. If g1 and g2 have the same number of edges, checks if g1 has more vertices than g2.
+  If one of the conditions is true, returns true. Else, returns false. 
