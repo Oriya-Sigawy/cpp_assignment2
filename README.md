@@ -1,4 +1,5 @@
-# System Programming 2 Assignment 1
+//214984932 Oriyas.07@gmail.com
+# System Programming 2 Assignment 2
 
 In this assignment I extended Graph. 
 As requested, I added comparison and arithmetic operators to Graph, each operator has a declaration in Graph.hpp and an implementation in Graph.cpp.  
