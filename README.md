@@ -21,4 +21,10 @@ As requested, I added comparison and arithmetic operators to Graph, each operato
   `Comparison operators`:
   
 * `g1>g2`: checks if g1's adjacency_matrix contains g2's adjacency_matrix. If not, checks if g1 has more edges than g2. If g1 and g2 have the same number of edges, checks if g1 has more vertices than g2.
-  If one of the conditions is true, returns true. Else, returns false. 
+  If one of the conditions is true, returns true. Else, returns false.
+* `g1>=g2`: checks if g1 is bigger or equal to g2 (by calling to > and ==). If it is, returns true. Else, returns false.
+* `g1<g2`: checks if g2 is bigger than g1 (by calling to >). If it is, returns true. Else, returns false.
+* `g1<=g2`: checks if g1 is smaller or equal to g2 (by calling < and ==). If it is, returns true. Else, returns false.
+* `g1==g2`: checks if g1 is not bigger than g2 and g2 is not bigger than g1. In that case, returns true. Else, checks that g1's adjacency_matrix is equal to g2's adjacency_matrix. If the matrixes are equals, returns true. Else, returns false.
+* `g1!=g2`: returns the negation of g1==g2.
+*  
