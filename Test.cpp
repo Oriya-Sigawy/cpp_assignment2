@@ -1,4 +1,4 @@
-//214984932 Oriyas.07@gmail.com
+// 214984932 Oriyas.07@gmail.com
 #include "doctest.h"
 #include "Algorithms.hpp"
 #include "Graph.hpp"
@@ -583,4 +583,12 @@ TEST_CASE("check reference vs value")
         {2, 4, 0}};
     CHECK(check_result(g1, expected4));
     CHECK(check_result(g2, expected3));
+    ++g1 = g2; // g1 will be equal to g2 because prefix ++ returns a reference
+    CHECK(check_result(g1, expected3));
+    g1++ = g2; // g1 will not be equal to g2 because postfix ++ returns a value
+    vector<vector<int>> expected5 = {
+        {0, 5, 6},
+        {5, 0, 7},
+        {5, 9, 0}};
+    CHECK(check_result(g1, expected5));
 }
