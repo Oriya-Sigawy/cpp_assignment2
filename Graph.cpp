@@ -282,7 +282,7 @@ namespace ariel
 
     bool Graph::operator<=(const Graph &g2) const
     {
-        return ((*this == g2) || g2 > *this);
+        return ((*this == g2) || *this < g2);
     }
 
     bool Graph::operator==(const Graph &g2) const
