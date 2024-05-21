@@ -1,6 +1,5 @@
 // 214984932 Oriyas.07@gmail.com
 
-// TODO-&
 /*
 this class represents a graph.
 */
@@ -71,14 +70,14 @@ namespace ariel
 
         // Aritmetic operators
         friend Graph operator+(const Graph &g1, const Graph &g2); // plus
-        Graph operator+() const;                                        // unary plus
+        Graph operator+() const;                                  // unary plus
         Graph &operator+=(const Graph &g2);                       // plus equal
         friend Graph operator-(const Graph &g1, const Graph &g2); // minus
-        Graph operator-() const;                                        // unary minus
+        Graph operator-() const;                                  // unary minus
         Graph &operator-=(const Graph &g2);                       // minus equal
 
         // comparison operators
-        bool operator>(const Graph &g2) const; // bigger
+        bool operator>(const Graph &g2) const;        // bigger
         bool operator>=(const Graph &g2) const;      // bigger or equal
         bool operator<(const Graph &g2) const;       // smaller
         bool operator<=(const Graph &g2) const;      // smaller or equal
