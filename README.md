@@ -1,7 +1,7 @@
 //214984932 Oriyas.07@gmail.com
 # System Programming 2 Assignment 2
 
-In this assignment I extended Graph. 
+In this assignment I extended the class "Graph".   
 As requested, I added comparison and arithmetic operators to Graph, each operator has a declaration in Graph.hpp and an implementation in Graph.cpp.  
 `Aritmethic operators`:  
 * `g1+g2`: returns a graph with adjacency_matrix that was obtained by adding g1's adjacency_matrix to g2's adjacency_matrix.
@@ -27,4 +27,5 @@ As requested, I added comparison and arithmetic operators to Graph, each operato
 * `g1<=g2`: checks if g1 is smaller or equal to g2 (by calling < and ==). If it is, returns true. Else, returns false.
 * `g1==g2`: checks if g1 is not bigger than g2 and g2 is not bigger than g1. In that case, returns true. Else, checks that g1's adjacency_matrix is equal to g2's adjacency_matrix. If the matrixes are equals, returns true. Else, returns false.
 * `g1!=g2`: returns the negation of g1==g2.
-*  
+
+I don't see how the operators affects the Algorithms.
