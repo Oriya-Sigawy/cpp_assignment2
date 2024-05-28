@@ -221,7 +221,7 @@ namespace ariel
 
     bool Graph::operator>(const Graph &g2) const
     {
-        if (this->vertices != g2.getNumOfVertices())
+        if (this->vertices != g2.getNumOfVertices())    //so equal will not be considered contained
         {
             bool contains = true;
             for (unsigned int i = 0; i < this->vertices; i++) // check if this contains g2
